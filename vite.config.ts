@@ -16,11 +16,10 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/main.js'),
+      entry: resolve(__dirname, 'src/main.ts'),
       name: 'CammieLibrary',
       formats: ['es', 'cjs', 'iife'],
-      // the proper extensions will be added
-      fileName: 'CammieLibrary',
+      fileName: (format) => `CammieLibrary.${format}.js`,
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled

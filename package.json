@@ -3,6 +3,18 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "main": "dist/CammieLibrary.cjs.js",
+  "module": "dist/CammieLibrary.es.js",
+  "unpkg": "dist/CammieLibrary.iife.js",
+  "files": [
+    "dist"
+  ],
+  "author": "hsiao-i <https://github.com/hsiao-i>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hsiao-i/Cammie"
+  },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",

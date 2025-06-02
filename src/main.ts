@@ -1,11 +1,3 @@
 import '@/assets/css/tailwindStyle.css';
 
-import { createApp } from 'vue';
-import { createPinia } from 'pinia';
-import App from './App.vue';
-
-const app = createApp(App);
-
-app.use(createPinia());
-
-app.mount('#app');
+export { default as TestWord } from './components/TestWord.vue';
