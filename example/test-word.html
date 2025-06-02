@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test component example</title>
+    <link rel="stylesheet" href="../dist/cammie-ui-component.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div style="width: 500px; margin: 20px">
+        <test-word></test-word>
+      </div>
+    </div>
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.41/vue.esm-browser.prod.js"
+        }
+      }
+    </script>
+    <script type="module">
+      import { createApp, ref } from 'vue';
+      import { TestWord } from '../dist/CammieLibrary.es.js';
+      createApp({
+        components: {
+          TestWord,
+        },
+        setup() {
+          const message = ref('');
+
+          const options = {
+            suffix: ['@gmail.com', '@hotmail.com', '@yahoo.com'],
+          };
+          return {
+            message,
+            options,
+          };
+        },
+      }).mount('#app');
+    </script>
+  </body>
+</html>
