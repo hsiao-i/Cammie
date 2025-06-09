@@ -15,8 +15,21 @@
     "type": "git",
     "url": "git+https://github.com/hsiao-i/Cammie"
   },
+  "bugs": {
+    "url": "https://github.com/hsiao-i/Cammie/issues"
+  },
+  "homepage": "https://github.com/hsiao-i/Cammie",
+  "keywords": [
+    "vue",
+    "vue3",
+    "vite",
+    "components",
+    "composables",
+    "ui"
+  ],
   "scripts": {
     "dev": "vite",
+    "dev:playground": "vite --mode playground",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",

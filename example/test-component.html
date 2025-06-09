@@ -10,6 +10,7 @@
     <div id="app">
       <div style="width: 500px; margin: 20px">
         <test-word></test-word>
+        <cm-button color="primary" class="bg-blue-500">按鈕</cm-button>
       </div>
     </div>
     <script type="importmap">
@@ -21,10 +22,11 @@
     </script>
     <script type="module">
       import { createApp, ref } from 'vue';
-      import { TestWord } from '../dist/CammieLibrary.es.js';
+
+      import { CmButton } from '../dist/CammieLibrary.es.js';
       createApp({
         components: {
-          TestWord,
+          CmButton,
         },
         setup() {
           const message = ref('');
