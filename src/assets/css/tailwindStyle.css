@@ -1,1 +1,37 @@
 @import 'tailwindcss';
+
+@layer components {
+  button {
+    @apply cursor-pointer;
+  }
+  .btn {
+    @apply rounded-md border border-transparent px-4 py-1.5 text-center transition hover:opacity-90 focus:ring-2 focus:outline-none active:ring-3 disabled:pointer-events-none disabled:opacity-60;
+  }
+  .btn-sm {
+    @apply px-3 py-1.5 text-sm;
+  }
+  .btn-primary-500 {
+    @apply bg-blue-500 text-white focus:ring-blue-500;
+  }
+  .btn-secondary-500 {
+    @apply bg-gray-500 text-white focus:ring-gray-500;
+  }
+  .btn-success-500 {
+    @apply bg-green-500 text-white focus:ring-green-500;
+  }
+  .btn-warning-500 {
+    @apply bg-yellow-500 text-white focus:ring-yellow-500;
+  }
+  .btn-danger-500 {
+    @apply bg-red-500 text-white focus:ring-red-500;
+  }
+  .btn-info-500 {
+    @apply bg-cyan-300 text-white focus:ring-cyan-300;
+  }
+  .btn-outline {
+    @apply border-2 border-current bg-transparent text-current;
+  }
+}
+
+@source inline("{bg|ring|border|text)-(blue|green|yellow|red)-500}");
+@source inline("bg-blue-500");
