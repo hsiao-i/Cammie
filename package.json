@@ -1,7 +1,6 @@
 {
   "name": "cammie-ui-component",
   "version": "0.0.0",
-  "private": true,
   "type": "module",
   "main": "dist/CammieLibrary.cjs.js",
   "module": "dist/CammieLibrary.es.js",
