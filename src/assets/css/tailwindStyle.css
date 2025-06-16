@@ -32,6 +32,3 @@
     @apply border-2 border-current bg-transparent text-current;
   }
 }
-
-@source inline("{bg|ring|border|text)-(blue|green|yellow|red)-500}");
-@source inline("bg-blue-500");
